@@ -6,7 +6,6 @@ def test_guardar_pedido():
         persistencia.guardar_pedido("Michael", "Jordan",file)
         firstline = file.readline()
         secondline = file.readline()
-        print(firstline)
         assert firstline == "-Pedro Gil de Diego"
         assert secondline == "-Michael Jordan"
         file.close()

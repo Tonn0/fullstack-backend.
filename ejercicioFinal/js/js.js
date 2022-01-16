@@ -13,7 +13,26 @@ $(document).ready(function(){
                 window.location.href="/ejercicio3/solicita_pedido.html";
             }
     })
+    $("#tamanno").on('change', function() {
+        
+        valor=document.getElementById("tamanno").value
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:5000/checksize",
+            data: {
+            "size": valor
+            
+            },
+            success: function (result) {
+                $("#resultado_tamano").text(result).value;
+            }
+            })
+            
+       });
 })
+
+
+
 
     
         

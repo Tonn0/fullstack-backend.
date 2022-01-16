@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/etilos.css">
-    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
     <title>Preparar Pedido</title>
 </head>
 <body>
@@ -48,12 +49,13 @@
                         <h4>* Datos del Pedido</h4>
                     
                     <div>
-                        <select name="p6" id="p6" >
-                            <option id="pequenna">Pequeña</option>
-                            <option id="mediana">Mediana</option>
-                            <option id="grande">Grande</option>
+                        <select name="tamanno" id="tamanno">
+                            <option id="pequenna" value="S">Pequeña</option>
+                            <option id="mediana" value="M">Mediana</option>
+                            <option id="grande" value="XL">Grande</option>
                         </select>
                     </div>
+                    <span id="resultado_tamano"></span>
                     <div id="cajasForm">
                         <label for="p7">Jamón York</label>
                         <input type="checkbox" id="p7" name="p7">
