@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/etilos.css">
+    
+    <title>Preparar Pedido</title>
+</head>
+<body>
+    
+    <div id="contenedor">
+        <header>
+            <div id="cabecera" >
+                <img src="img/logoopizza.png" alt="Logo" class="foto" >
+                <h1 id="titulo" >Pizzas Full Stack</h3> 
+            </div>
+        </header>
+        <section>
+
+            <form  action="http://localhost:5000/pizza" id="datosDelCliente" method="post">
+                <div id="fondoCliente" > 
+                     <h4  style="font-style: italic;">* Datos del Cliente</h4>
+                    
+                    <div id="cajasForm">
+                        <label for="p1" id="p1">Nombre:</label>
+                        <input type="text" id="p1texto" name="p1">
+                    </div>
+                    <div id="cajasForm"> 
+                        <label for="p2" id="p2">Apellido:</label>
+                        <input type="text" id="p2texto" name="p2">
+                    </div>
+                    <div id="cajasForm">
+                        <label for="p3">Fecha de Nacimiento</label>
+                        <input type="date" id="p3" name="p3">
+                    </div>
+                    <div id="cajasForm">
+                        <label for="p4">Telefono:</label>
+                        <input type="text" id="p4" name="p4">
+                    </div>
+                    <div id="cajasForm">
+                        <label for="p5">Direccion Postal:</label>
+                        <input type="text" id="p5" name="p5">
+                    </div>
+                </div>
+                <div  class="fondoPedido" >
+                        <h4>* Datos del Pedido</h4>
+                    
+                    <div>
+                        <select name="p6" id="p6" >
+                            <option id="pequenna">Pequeña</option>
+                            <option id="mediana">Mediana</option>
+                            <option id="grande">Grande</option>
+                        </select>
+                    </div>
+                    <div id="cajasForm">
+                        <label for="p7">Jamón York</label>
+                        <input type="checkbox" id="p7" name="p7">
+                    </div>
+                    <div>
+                        <label for="p7">Champiñones</label>
+                        <input type="checkbox" id="p7" name="p7">
+                    </div>
+                    <div>
+                        <label for="p7">Pepperoni</label>
+                        <input type="checkbox" id="p7" name="p7">
+                    </div>
+                    <div>
+                        <label for="p7">Aceitunas</label>
+                        <input type="checkbox" id="p7" name="p7">
+                    </div>
+                </div>
+                <button type="submit" id="botoncajas">Enviar Pedido</button>
+                
+            </form>
+            
+        </section>
+    </div>
+    
+</body>
+
+</html>
